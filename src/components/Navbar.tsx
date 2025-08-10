@@ -12,10 +12,10 @@ const Navbar = () => {
     <nav className="fixed top-0 w-full z-50 bg-red bg-opacity-60 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
-        <div className="text-white font-bold text-xl">Mohit.dev</div>
+        <div className="text-white font-bold text-3xl">Mohit.dev</div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 text-white text-sm">
+        <div className="hidden md:flex space-x-6 text-white text-xl">
           <a href="#home" className="hover:text-green-400">Home</a>
           <a href="#about" className="hover:text-green-400">About</a>
           <a href="#projects" className="hover:text-green-400">Projects</a>
