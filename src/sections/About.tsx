@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-// import ThreeBG from '../components/ThreeBG'
+import ThreeBG from '../components/ThreeBG'
 
 // Variants
 const container = {
@@ -49,7 +49,7 @@ export default function About() {
 
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center text-white overflow-hidden]">
-      {/* <ThreeBG /> */}
+      <ThreeBG />
 
       <motion.div
         className="relative z-10 max-w-5xl px-6 text-center"
@@ -103,7 +103,7 @@ export default function About() {
             boxShadow: "0px 0px 25px rgba(0, 255, 179, 0.9)"
           }}
           transition={{ type: "spring", stiffness: 300 }}
-          href="#projects"
+          href="/projects"
           className="inline-block mt-10 px-10 py-4 rounded-full shadow-lg font-semibold"
           style={{
             background: "linear-gradient(90deg, #00FFB3, #00B3FF)",

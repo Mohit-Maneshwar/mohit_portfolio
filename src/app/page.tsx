@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="relative z-10">
-        <Navbar />
+        
         <Hero />
         <About />
         <Projects />

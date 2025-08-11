@@ -1,10 +1,11 @@
 // src/app/layout.tsx
 'use client';
 
+import Navbar from '@/components/Navbar';
 import '../styles/globals.css'; // ✅ Corrected path
-import ThreeBG from '../components/ThreeBG'; // ✅ Also make sure this path is valid
 import { initSmoothScroll } from '@/utils/lenis';
 import { useEffect } from 'react';
+import Footer from '@/components/Footer';
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -14,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <ThreeBG /> {/* This renders your background */}
+        <Navbar />
         <main className="relative z-10">{children}</main>
       </body>
     </html>

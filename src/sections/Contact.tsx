@@ -4,13 +4,14 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { Link } from 'lucide-react'
+import ThreeBG from '@/components/ThreeBG'
 // import ThreeBG from '../components/ThreeBG'
 
 const Contact = () => {
   return (
     <section className="relative w-full min-h-screen text-white overflow-hidden">
       {/* 3D Background */}
-      {/* <ThreeBG /> */}
+      <ThreeBG />
 
       {/* Foreground Content */}
       <div className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center px-6 md:px-20 py-16 gap-12">

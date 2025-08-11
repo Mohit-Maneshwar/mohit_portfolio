@@ -24,7 +24,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          Welcome to <span className="text-[#00FFB3]">Mohit's</span> World
+          Welcome to <span className="text-[#00FFB3]">Mohit&apos;s</span> World
+          
         </motion.h1>
 
         <motion.p
