@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import ThreeBG from '../components/ThreeBG'
+// import ThreeBG from '../components/ThreeBG'
 
 // Variants
 const container = {
@@ -49,7 +49,7 @@ export default function About() {
 
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center text-white overflow-hidden]">
-      <ThreeBG />
+      {/* <ThreeBG /> */}
 
       <motion.div
         className="relative z-10 max-w-5xl px-6 text-center"
@@ -59,7 +59,6 @@ export default function About() {
       >
         {/* Animated neon name */}
         <motion.h1
-          variants={slideUp}
           className="text-4xl md:text-6xl font-extrabold tracking-wide"
           style={{
             backgroundImage: "linear-gradient(90deg, #00FFB3, #00B3FF)",
@@ -73,7 +72,6 @@ export default function About() {
 
         {/* Subtitle */}
         <motion.h2
-          variants={slideUp}
           className="text-xl md:text-2xl font-medium mt-2 text-gray-300"
         >
           Creative Web Developer & Designer
@@ -82,7 +80,6 @@ export default function About() {
 
         {/* Description */}
         <motion.p
-          variants={slideUp}
           className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed"
         >
           I craft <span style={{ color: "#00FFB3" }}>modern, interactive, and engaging</span> 
@@ -93,7 +90,6 @@ export default function About() {
         </motion.p>
 
         <motion.p
-          variants={slideUp}
           className="mt-4 text-lg md:text-xl text-gray-300 leading-relaxed"
         >
           Beyond code, I’m passionate about animation, immersive design, 
@@ -102,7 +98,6 @@ export default function About() {
 
         {/* Button */}
         <motion.a
-          variants={slideUp}
           whileHover={{
             scale: 1.1,
             boxShadow: "0px 0px 25px rgba(0, 255, 179, 0.9)"
@@ -124,21 +119,21 @@ export default function About() {
         src="/img1.webp"
         alt="Profile"
         className="absolute top-16 left-16 w-40 h-48 object-cover rounded-xl shadow-xl"
-        variants={slideLeft}
+        
         animate={{ y: [0, -15, 0], transition: { duration: 5, repeat: Infinity } }}
       />
       <motion.img
         src="/img2.webp"
         alt="Profile"
         className="absolute bottom-16 left-20 w-44 h-52 object-cover rounded-xl shadow-xl"
-        variants={slideLeft}
+        
         animate={{ y: [0, 20, 0], transition: { duration: 6, repeat: Infinity } }}
       />
       <motion.img
         src="/img3.webp"
         alt="Profile"
         className="absolute top-20 right-20 w-40 h-48 object-cover rounded-xl shadow-xl"
-        variants={slideRight}
+        
         animate={{ y: [0, -18, 0], transition: { duration: 5.5, repeat: Infinity } }}
       />
     </section>

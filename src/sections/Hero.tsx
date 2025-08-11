@@ -2,13 +2,13 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import ThreeBG from '../components/ThreeBG'
+// import ThreeBG from '../components/ThreeBG'
 
 const Hero = () => {
   return (
     <section className="relative w-full h-screen text-white overflow-hidden">
       {/* 3D Background */}
-      <ThreeBG />
+      {/* <ThreeBG /> */}
 
       {/* Background Image */}
       <div className="absolute inset-0 z-0">

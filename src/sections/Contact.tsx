@@ -3,13 +3,14 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
-import ThreeBG from '../components/ThreeBG'
+import { Link } from 'lucide-react'
+// import ThreeBG from '../components/ThreeBG'
 
 const Contact = () => {
   return (
     <section className="relative w-full min-h-screen text-white overflow-hidden">
       {/* 3D Background */}
-      <ThreeBG />
+      {/* <ThreeBG /> */}
 
       {/* Foreground Content */}
       <div className="relative z-10 flex flex-col md:flex-row h-full items-center justify-center px-6 md:px-20 py-16 gap-12">
@@ -32,15 +33,15 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-[#00FFB3] text-2xl" />
-              <span>mohit@example.com</span>
+              <span>mohitmane145@gmail.com</span>
             </div>
             <div className="flex items-center gap-4">
               <FaGithub className="text-[#00FFB3] text-2xl" />
-              <span>github.com/mohit</span>
+              <span>github.com/Mohit-Maneshwar</span>
             </div>
             <div className="flex items-center gap-4">
               <FaLinkedin className="text-[#00FFB3] text-2xl" />
-              <span>linkedin.com/in/mohit</span>
+              <span>linkedin.com/in/mohit-maneshwar-971546297</span>
             </div>
           </div>
         </motion.div>

@@ -11,10 +11,6 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      {/* 🔥 Background Canvas Behind Everything */}
-      {/* <ThreeBG /> */}
-
-      {/* 🔝 Main Content on Top of Background */}
       <div className="relative z-10">
         <Navbar />
 
