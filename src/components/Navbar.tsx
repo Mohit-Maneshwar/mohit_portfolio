@@ -1,25 +1,29 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { useState } from 'react';
+import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import routes from '@/routes'; // centralized routes file
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-red bg-opacity-60 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        
         {/* Logo */}
-        <div className="text-white font-bold text-3xl">Mohit.dev</div>
+        <Link href={routes.home} className="text-white font-bold text-3xl">
+          Mohit.dev
+        </Link>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6 text-white text-xl">
-          <a href="#home" className="hover:text-green-400">Home</a>
-          <a href="#about" className="hover:text-green-400">About</a>
-          <a href="#projects" className="hover:text-green-400">Projects</a>
-          <a href="#contact" className="hover:text-green-400">Contact</a>
+          <Link href={routes.home} className="hover:text-green-400">Home</Link>
+          <Link href={routes.about} className="hover:text-green-400">About</Link>
+          <Link href={routes.projects} className="hover:text-green-400">Projects</Link>
+          <Link href={routes.contact} className="hover:text-green-400">Contact</Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -40,15 +44,15 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-red bg-opacity-90 backdrop-blur-lg px-6 py-4 space-y-4 text-white text-sm overflow-hidden"
           >
-            <a href="#home" className="block hover:text-green-400">Home</a>
-            <a href="#about" className="block hover:text-green-400">About</a>
-            <a href="#projects" className="block hover:text-green-400">Projects</a>
-            <a href="#contact" className="block hover:text-green-400">Contact</a>
+            <Link href={routes.home} className="block hover:text-green-400" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link href={routes.about} className="block hover:text-green-400" onClick={() => setMenuOpen(false)}>About</Link>
+            <Link href={routes.projects} className="block hover:text-green-400" onClick={() => setMenuOpen(false)}>Projects</Link>
+            <Link href={routes.contact} className="block hover:text-green-400" onClick={() => setMenuOpen(false)}>Contact</Link>
           </motion.div>
         )}
       </AnimatePresence>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

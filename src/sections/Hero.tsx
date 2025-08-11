@@ -1,19 +1,16 @@
 'use client'
 
-import React from 'react'
-import { motion } from 'framer-motion'
-// import ThreeBG from '../components/ThreeBG'
+import React from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
     <section className="relative w-full h-screen text-white overflow-hidden">
-      {/* 3D Background */}
-      {/* <ThreeBG /> */}
-
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://i.postimg.cc/J7B2RTJs/mohit.jpg" // Replace with your image file path in /public
+          src="https://i.postimg.cc/J7B2RTJs/mohit.jpg"
           alt="Mohit Maneshwar"
           className="w-screen h-full object-cover opacity-20 mix-blend-screen"
         />
@@ -35,7 +32,8 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.3 }}
-        >Transforming ideas into interactive experiences using modern web technologies and creative design.
+        >
+          Transforming ideas into interactive experiences using modern web technologies and creative design.
         </motion.p>
 
         <motion.div
@@ -44,16 +42,30 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 0.6 }}
         >
-          <button className="bg-[#00FFB3] text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition-transform">
-            Explore Now
-          </button>
-          <button className="border border-[#00FFB3] px-6 py-3 rounded-xl hover:bg-[#00FFB3] hover:text-black transition">
-            Contact Me
-          </button>
+          {/* Explore Now Button */}
+          <Link href="/about">
+            <button
+              className="bg-[#00FFB3] text-black px-6 py-3 rounded-xl font-semibold 
+              hover:scale-110 hover:shadow-[0_0_15px_#00FFB3] transition-transform duration-300"
+            >
+              Explore Now
+            </button>
+          </Link>
+
+          {/* Contact Me Button */}
+          <Link href="/contact">
+            <button
+              className="border border-[#00FFB3] px-6 py-3 rounded-xl 
+              hover:bg-[#00FFB3] hover:text-black hover:scale-110 hover:shadow-[0_0_15px_#00FFB3] 
+              transition-all duration-300"
+            >
+              Contact Me
+            </button>
+          </Link>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
