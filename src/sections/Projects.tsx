@@ -25,8 +25,8 @@ const projects = [
     title: 'Gokul Computer Gondia',
     description: 'Designed a clean, responsive website for Gokul Computer Gondia.',
     image: '/Gondia.png',
-    liveLink: 'https://gokul-computer-2jg6.vercel.app/',
-    githubLink: 'https://github.com/Mohit-Maneshwar/GokulComputer'
+    liveLink: 'https://gokul-computer-gondia-5ych.vercel.app/',
+    githubLink: 'https://github.com/Mohit-Maneshwar/GokulComputerGondia'
   }
 ]
 
