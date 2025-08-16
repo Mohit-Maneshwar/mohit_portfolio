@@ -41,8 +41,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
 
         <Navbar />
-        <main className="relative z-10">{children}</main>
-        <Footer />
+        <main className="relative z-10">{children}<Footer /></main>
+        
       </body>
     </html>
   );

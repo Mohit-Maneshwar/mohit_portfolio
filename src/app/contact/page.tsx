@@ -7,10 +7,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-        <Navbar />
-        
       <Contact />
-      <Footer />
     </div>
   )
 }

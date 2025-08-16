@@ -1,7 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
 import About from "@/sections/About";
 import Hero from "@/sections/Hero";
 import Projects from "@/sections/Projects";
@@ -11,14 +9,14 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="relative z-10">
+      {/* <div className="relative z-10"> */}
         
         <Hero />
         <About />
         <Projects />
         <Contact />
-        <Footer />
-      </div>
+        {/* <Footer /> */}
+      {/* </div> */}
     </>
   );
 }
